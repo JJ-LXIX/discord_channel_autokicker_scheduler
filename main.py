@@ -10,9 +10,10 @@ intents.members = True
 
 client = discord.Client(intents=intents)
 
+indianTimeZone = pytz.timezone("Asia/Kolkata")
 
 async def kick_users():
-    now = datetime.datetime.now().time()
+    now = datetime.datetime.now(indianTimeZone).time()
     if now >= KICK_TIME:
         for voice_channel in client.get_all_channels():
             if isinstance(voice_channel, discord.VoiceChannel):
