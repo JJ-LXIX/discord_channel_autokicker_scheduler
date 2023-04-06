@@ -1,3 +1,5 @@
 # discord_channel_autokicker_scheduler
 
-use the code above to self host your own discord bot that kicks everyone from channels at a particular time scheduled by you
+Use the code to self host your own discord bot that kicks everyone from channels at a particular time scheduled by you.
+
+Be sure to add the server ID to the TOKEN variable found in the code.
